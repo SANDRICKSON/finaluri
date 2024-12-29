@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="images/SANDRINIO.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bpg-nuskha-modern.min.css">
+
+    <title>წიგნები</title>
+    <script src="js/books.js"></script>
+    <header>
+        <nav>
+            <ul class="nav-menu">
+                <img src="images/SANDRINIO.png" alt="Logo" class="logo" height="100"></a></li>
+                <li><a href="index.html" data-lang="main">მთავარი</a></li>
+                <li><a href="history.html" data-lang="history">ისტორია</a></li>
+                <li><a href="culture.html" data-lang="culture">კულტურა</a></li>
+                <li><a href="tourism.html" data-lang="tourism">ტურიზმი</a></li>
+                <li><a href="gallery.html" data-lang="gallery">გალერეა</a></li>
+                <li><a href="TIMETABLES.HTML" data-lang="timetable">განრიგი</a></li>
+                <li><a href="NEWS.HTML" data-lang="news">სიახლეები</a></li>
+                <li><a href="aboutproject.html" data-lang="project" class="active">პროექტის შესახებ</a></li>
+                <li><a href="blogs.html" data-lang="videos">ვიდეოები</a></li>
+                <li><a href="contact.html" data-lang="contact">კონტაქტი</a></li>
+                <li><a href="books.html" data-lang="books">წიგნები</a></li>
+                <li><a href="AUTH/login.html" data-lang="log-in"><b>Log In</b></a></li>
+                <li><a href="AUTH/register.html" data-lang="register"><b>Register</b></a></li>
+            </ul>
+            <div class="language-buttons">
+                <button class="btn btn-warning" onclick="changeLanguage('ka')">ქართული</button>
+                <button class="btn btn-success" onclick="changeLanguage('en')">English</button>
+            </div>
+        </nav>
+    </header>
+
+    <style>
+        .header-books {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .header-books img {
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            width: 80%;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+
+        .header-books img:hover {
+            transform: scale(1.05);
+        }
+
+        .header-books p, .header-books P {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #333;
+            text-align: justify; 
+            margin: 15px 0;
+            padding: 0 20px;
+        }
+
+        .header-books b {
+            font-weight: bold;
+            color: #2c3e50; 
+        }
+
+        .header-books p:first-child {
+            font-size: 1.3em;
+            color: #555;
+        }
+
+        .header-books p, .header-books P {
+            background-color: #f9f9f9;
+            border-left: 4px solid #3498db;
+            padding-left: 20px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+       
+        .header-books p:hover, .header-books P:hover {
+            background-color: #ecf0f1;
+        }
+
+        .poem{
+            font-family: "BPG Nuskha Modern", sans-serif;
+        }
+
+        .author{
+            
+            font-family: "BPG Nuskha Modern", sans-serif;
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="header-books">
+        <img src="images/chiaturabook.jpg" alt="Chiatura Book">
+        <img src="images/turashvili.jpg"   alt="Chiatura Book">
+        <p data-lang="turashvili">ლეგენდარული ქართველი მწერლის <b>დათო ტურაშვილის</b> წიგნი ქალაქ ჭიათურაზე</p>
+        <img src="images/galaktioni.jpg" alt="Galaktioni">
+        <p data-lang="galaqtioni">პოეტთა მეფის <b>გალაკტიონის</b> ლექსი შავ ოქროს ქალაქზე. საინტერესოა ის ფაქტი რომ გალაკტიონის მეუღლე ქალბატონი ოლია ოკუჯავა სწორედ ქალაქ ჭიათურაში განამწესეს პედაგოგად. ასე რომ რკინიგზის სადგურზე აუცილებლად ნახავთ დიდი გალაკტიონის ნაფეხურებს</p>
+        <img src="images/blackgold.png" alt="shavioqrosqalaqi">
+        <P data-lang="blackgold">ჭიათურის ასი წლისთავთან დაკავშირებით გამოცემული წიგნი, რომელიც ასახავს ჭიათურის განვითარებს ისტორიას, მრეწველობასა და კულტურას.</P>
+        <p data-lang="article"><b>საინტერესო სტატია:</b> ვაჟა-ფშაველა ჭიათურაში</p>
+        <a href="https://kutaisi.travel/10648/vaja-wiaturashi/"><img src="images/vaja.jpg"></a>
+        <P data-lang="warning"></P>
+    </div>
+
+
+
+    <div class="poem">
+        <div class="poem-title">იმერეთს</div>
+        <p>ერთხანად ჩემო მძრახაო,<br>
+        ლიხს-აქათურო დედაო!<br>
+        გხედავ, რომ შამრიგებიხარ,<br>
+        მით შენთან სალამს ვბედაო.</p>
+        <p>შაერთებულად შენშია<br>
+        ქართლსა და კახეთს ვხედაო.</p>
+        <p>ფარ-ხმალო საქართველოსავ,<br>
+        სხვაცა გბაძავდეს, ნეტაო!</p>
+        <p>ის მომწონს, თავის ქვეყნისა<br>
+        კარებს რო მაგრა ჰკეტაო.<br>
+        ვნება ნუ ასცდეს, სავნებლად<br>
+        ვინაც შენ გაგიმეტაო!</p>
+    </div>
+    <div class="author">ვაჟა–ფშაველა<br>1913 წ.</div>
+
+    <footer>
+        <div class="footer-content">
+            <a href="https://www.tbceducation.ge/"><img src="images/tbc.png" alt="TBC Logo" class="footer-logo" height="125"></a>
+            
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com/profile.php?id=61556699115785&locale=ka_GE"><img src="images/imfacebook.png" alt="Facebook" height="125"></a></li>
+                <li><a href=""><img src="images/insta.png" alt="Instagram" height="125"></a></li>
+                <li><a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"><img src="images/linked.png" alt="LinkedIn" height="125"></a></li>
+            </ul>
+        </div>
+        <p>© 2024 ყველა უფლება დაცულია.</p>
+    </footer>
+
+</body>
+</html>

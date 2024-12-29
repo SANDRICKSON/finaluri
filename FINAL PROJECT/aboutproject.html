@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="images/SANDRINIO.png" type="image/x-icon">
+    <script src="js/project.js" defer></script>
+    
+    <title>პროექტის შესახებ</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-menu">
+                <img src="images/SANDRINIO.png" alt="Logo" class="logo" height="100"></a></li>
+                <li><a href="index.html" data-lang="main">მთავარი</a></li>
+                <li><a href="history.html" data-lang="history">ისტორია</a></li>
+                <li><a href="culture.html" data-lang="culture">კულტურა</a></li>
+                <li><a href="tourism.html" data-lang="tourism">ტურიზმი</a></li>
+                <li><a href="gallery.html" data-lang="gallery">გალერეა</a></li>
+                <li><a href="TIMETABLES.HTML" data-lang="timetable">განრიგი</a></li>
+                <li><a href="NEWS.HTML" data-lang="news">სიახლეები</a></li>
+                <li><a href="aboutproject.html" data-lang="project" class="active">პროექტის შესახებ</a></li>
+                <li><a href="blogs.html" data-lang="videos">ვიდეოები</a></li>
+                <li><a href="contact.html" data-lang="contact">კონტაქტი</a></li>
+                <li><a href="books.html" data-lang="books">წიგნები</a></li>
+                <li><a href="AUTH/login.html" data-lang="log-in"><b>Log In</b></a></li>
+                <li><a href="AUTH/register.html" data-lang="register"><b>Register</b></a></li>
+            </ul>
+            <div class="language-buttons">
+                <button class="btn btn-warning" onclick="changeLanguage('ka')">ქართული</button>
+                <button class="btn btn-success" onclick="changeLanguage('en')">English</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1 data-lang="shesaxeb">პროექტის შესახებ</h1>
+            <p class="subtitle" data-lang="Explore">"Sandro Travel" არის ტურისტული კომპანია, რომელიც ეხმარება ტურისტებს აღმოაჩინონ ქალაქი ჭიათურა</p>
+        </section>
+
+        <section class="project-info">
+            <div class="content">
+                <h2 data-lang="details">პროექტის დეტალები</h2>
+                <p data-lang="creating"><b>პროექტი მომზადდა "თიბისი ტექსკოლის X ჯეოლაბის ფარგლებში"</b></p>
+                <p data-lang="author"><b>პროექტის ავტორი:</b> სანდრო ქათამაძე</p>
+            </div>
+        </section>
+
+        <section class="author-info">
+            <div class="content">
+                <h2 class="about" data-lang="aboutauthor">ავტორის შესახებ</h2>
+                <img src="images/sandro.jpg" alt="სანდრო ქათამაძე" class="author-image" height="500">
+                <p data-lang="name"><b>სანდრო ქათამაძე</b></p>
+                <p data-lang="school">ქალაქი ჭიათურა - მეხუთე საჯარო სკოლა</p>
+                <p data-lang="skillwill">SKILLWILL NEO UNIVERSITY-ს სტუდენტი Backend Development-ის განხრით</p>
+                <p data-lang="front">TBC Techschool-ის კურსდამთავრებული Front End Development-ის განხრით</p>
+                <p data-lang="mobile">TBC Techschool-ის კურსდამთავრებული მობაილ დეველოპმენტის განხრით</p>
+                <p data-lang="explorium">Explorium-ს კურსდამთავრებული პითონ ჩეთბოტის და ნარატივ დიზაინის განხრით</p>
+            </div>
+            <b data-lang="myprojects">სანდრო ქათამაძის პროექტები</b>
+        </section>
+        <a href="https://drive.google.com/uc?export=download&id=1cUeuNnM-a1v1oAuC2kAubmszUjUEnWT7" download>
+            <button class="download-civlab">CIVLAB დააჭირეთ ჩამოსატვირთად</button>
+        </a>
+        
+        <a href="https://drive.google.com/file/d/12mH_JCh6vACeBxAdGFP43d-LhCw3y9jS/view?usp=sharing" download>
+            <button class="download-book">BOOK დააჭირეთ ჩამოსატვირთად</button>
+        </a>
+        
+        <a href="https://drive.google.com/file/d/1eD94-eQMoNZAYLg64z85_UkpIKnCrVfT/view?usp=sharing"><button class="download-storybook">STORYBOOK დააჭირეთ ჩამოსატვირთად</button></a>
+        
+        <a href="https://psychobot-4mkv.onrender.com/">
+            <button class="psychobot-button">PSYCHOBOT - ფსიქოლოგიური ჩეთბოტი</button>
+        </a>
+
+        <a href="https://www.animachatbotics.com/chatbot/Chat/4444">
+            <button class="doctorbot">ექიმი ჩეთბოტი მედეა - Animachatbotics</button>
+        </a>
+
+        <a href="https://fuchsia-guinna-72.tiiny.site/">
+            <button class="resume">სანდრო ქათამაძის რეზიუმე</button>
+        </a>
+        
+
+        <style>
+
+            .resume{
+                background-color: orange;
+                color: white;
+            }
+
+            .doctorbot{
+                background-color: red;
+                color: white;
+            }
+
+
+            button {
+                padding: 10px 20px;
+                font-size: 16px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                margin: 10px 0;
+            }
+        
+            
+            .download-civlab {
+                background-color: #4CAF50; 
+                color: white;
+            }
+        
+            .download-civlab:hover {
+                background-color: #45a049;
+            }
+        
+            
+            .download-book {
+                background-color: #FF5722; 
+                color: white;
+            }
+        
+            .download-book:hover {
+                background-color: #e64a19;
+            }
+        
+            
+            .download-storybook {
+                background-color: #9C27B0; 
+                color: white;
+            }
+        
+            .download-storybook:hover {
+                background-color: #8e24aa;
+            }
+        
+            
+            .psychobot-button {
+                background-color: #008CBA; 
+                color: white;
+            }
+        
+            .psychobot-button:hover {
+                background-color: #007bb5;
+            }
+        
+            button:active {
+                transform: scale(0.98); 
+            }
+        
+            a {
+                text-decoration: none; 
+            }
+        </style>
+</body>
+</html>
+
+        
+        
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <a href="https://www.tbceducation.ge/"><img src="images/tbc.png" alt="TBC Logo" class="footer-logo" height="125"></a>
+            
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com/profile.php?id=61556699115785&locale=ka_GE"><img src="images/imfacebook.png" alt="Facebook" height="125"></a></li>
+                <li><a href=""><img src="images/insta.png"></a>
+                <li><a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"><img src="images/linked.png" alt="LinkedIn" height="125"></a></li>
+            </ul>
+        </div>
+        <p>© 2024 ყველა უფლება დაცულია.</p>
+    </footer>
+</body>
+</html>

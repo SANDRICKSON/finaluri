@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>გალერეა - ჭიათურა</title>
+    <link rel="shortcut icon" href="images/SANDRINIO.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/gallery.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <img src="images/SANDRINIO.png" alt="Logo" class="logo" height="100"></a></li>
+                <li><a href="index.html" data-lang="main">მთავარი</a></li>
+                <li><a href="history.html" data-lang="history">ისტორია</a></li>
+                <li><a href="culture.html" data-lang="culture">კულტურა</a></li>
+                <li><a href="tourism.html" data-lang="tourism">ტურიზმი</a></li>
+                <li><a href="gallery.html" data-lang="gallery">გალერეა</a></li>
+                <li><a href="timetables.html" data-lang="timetable">განრიგი</a></li>
+                <li><a href="news.html" data-lang="news">სიახლეები</a></li>
+                <li><a href="aboutproject.html" data-lang="project" class="active">პროექტის შესახებ</a></li>
+                <li><a href="blogs.html" data-lang="videos">ვიდეოები</a></li>
+                <li><a href="contact.html" data-lang="contact">კონტაქტი</a></li>
+                <li><a href="books.html" data-lang="books">წიგნები</a></li>
+                <li><a href="AUTH/login.html" data-lang="log-in"><b>Log In</b></a></li>
+                <li><a href="AUTH/register.html" data-lang="register"><b>Register</b></a></li>
+            </ul>
+            <div class="language-buttons">
+                <button class="btn btn-warning" onclick="changeLanguage('ka')">ქართული</button>
+                <button class="btn btn-success" onclick="changeLanguage('en')">English</button>
+            </div>
+        </nav>
+    </header>
+    
+    
+
+    <section class="section gallery">
+        <h2 data-lang="gallery-title">გალერეა</h2>
+        <p data-lang="gallery-text">იხილეთ ქალაქის ულამაზესი ხედები და მნიშვნელოვანი ადგილები.</p>
+
+        
+        <div class="upload-section">
+            <input type="file" id="imageUpload" accept="image/*">
+            <button id="uploadButton" data-lang="upload-btn">ატვირთვა</button>
+            <b data-lang="urlsoon"> მალე ბმულით ატვირთვაც დაემატება</b>
+        </div>
+        
+        
+        <div class="gallery-container" id="galleryContainer">
+            <div class="gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk1wlSc2srLC540Ng55LFmug38x7WKl08pYw&s" alt="Chiatura 1" class="gallery-img">
+            </div>
+            <div class="gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyVxI6K4e_n_QO1aNoH2u57vZXnp-Ck5i8Mg&s" alt="Chiatura 2" class="gallery-img">
+            </div>
+            <div class="gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSObJ9vxGEpGT-sXGlQS0fxoMmbihC7CyVN8w&s" alt="Chiatura 3" class="gallery-img">
+            </div>
+            <div class="gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvtBCkwtUotze2PUVqpjLUuieSfbNcvhjZMQ&s" alt="Chiatura 4" class="gallery-img">
+            </div>
+            <div class="gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKQtnt0-pwxUeCzPPrUru0W41JhwpOITvJKA&s" alt="Chiatura 5" class="gallery-img">
+            </div>
+            <div class="gallery-item">
+                <img src="images/tresti.jpg">
+            </div>
+            <div class="gallery-item">
+                <img src="images/oldcable.jpg">
+            </div>
+            <div class="gallery-item">
+                <img src="images/mgvimevi.jpg">
+            </div>
+            <div class="gallery-item">
+                <img src="images/katskhi.png">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <a href="https://www.tbceducation.ge/"><img src="images/tbc.png" alt="TBC Logo" class="footer-logo" height="125"></a>
+            
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com/profile.php?id=61556699115785&locale=ka_GE"><img src="images/imfacebook.png" alt="Facebook" height="125"></a></li>
+                <li><a href=""><img src="images/insta.png" alt="Instagram" height="125"></a></li>
+                <li><a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"><img src="images/linked.png" alt="LinkedIn" height="125"></a></li>
+            </ul>
+        </div>
+        <p>© 2024 ყველა უფლება დაცულია.</p>
+    </footer>
+    
+    
+</body>
+</html>

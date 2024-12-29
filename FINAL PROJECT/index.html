@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>მთავარი - ჭიათურა</title>
+    <link rel="shortcut icon" href="images/SANDRINIO.png" type="image/x-icon">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/index.js"></script>
+</head>
+<body>
+
+   
+
+    <header>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <img src="images/SANDRINIO.png" alt="Logo" class="logo" height="100"></a></li>
+                <li><a href="index.html" data-lang="main">მთავარი</a></li>
+                <li><a href="history.html" data-lang="history">ისტორია</a></li>
+                <li><a href="culture.html" data-lang="culture">კულტურა</a></li>
+                <li><a href="tourism.html" data-lang="tourism">ტურიზმი</a></li>
+                <li><a href="gallery.html" data-lang="gallery">გალერეა</a></li>
+                <li><a href="TIMETABLES.HTML" data-lang="timetable">განრიგი</a></li>
+                <li><a href="NEWS.HTML" data-lang="news">სიახლეები</a></li>
+                <li><a href="aboutproject.html" data-lang="project" class="active">პროექტის შესახებ</a></li>
+                <li><a href="blogs.html" data-lang="videos">ვიდეოები</a></li>
+                <li><a href="contact.html" data-lang="contact">კონტაქტი</a></li>
+                <li><a href="books.html" data-lang="books">წიგნები</a></li>
+                <li><a href="AUTH/login.html" data-lang="log-in"><b>Log In</b></a></li>
+                <li><a href="AUTH/register.html" data-lang="register"><b>Register</b></a></li>
+            </ul>
+            <div class="language-buttons">
+                <button class="btn btn-warning" onclick="changeLanguage('ka')">ქართული</button>
+                <button class="btn btn-success" onclick="changeLanguage('en')">English</button>
+            </div>
+        </nav>
+
+    </header>
+
+    
+
+    <section class="section main text-center py-5">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/CHIATURA.jpg" class="d-block w-100" alt="ჭიათურა 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/kult.png" class="d-block w-100" alt="ჭიათურა 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/katskhi.png" class="d-block w-100" alt="ჭიათურა 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div style="margin-top: 20px;">
+            <img src="images/cablecarsur.png" height="250" width="250">
+        </div>
+    </section>
+    
+    <div class="sticker mt-4">
+        <img src="images/sabagiro.png" alt="საბაგირო სტიკერი" class="img-fluid cablecar-animation" height="250px" width="250">
+    </div>
+
+    <div class="sticker mt-4">
+        <img src="images/good.png" alt="საბაგირო სტიკერი" class="img-fluid cablecar-animation1" height="250px" width="250">
+    </div>
+
+    <div class="chatbot-container">
+        <a href="https://www.animachatbotics.com/chatbot/Chat/4449" class="chatbot-link">
+            <div class="bot-card">
+                <img src="images/BOT1.jpg" alt="გიდბოტი ეკა" class="bot-image">
+                <div class="bot-content">
+                    <h3 data-lang="eka">გიდბოტი ეკა</h3>
+                    <p data-lang="testmode">სატესტო რეჟიმში მომუშავე ჩეთბოტი</p>
+                    <p class="cta-text" data-lang="click">დააჭირეთ სურათს რათა ილაპარაკოთ</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    
+    <div class="chatbot-container">
+        <a href="https://drive.google.com/file/d/18PlKjeuSdbkeexWWo3sm0I4rsiiiSF7q/view?usp=sharing" class="chatbot-link">
+            <div class="bot-card">
+                <img src="images/download.png" alt="Explore Chiatura" class="bot-image">
+                <div class="bot-content">
+                    <h3 data-lang="app">ჩამოტვირთეთ შესაბამისი აპლიკაცია</h3>
+                    <p data-lang="testapp">Explore Chiatura სატესტო რეჟიმში მომუშავე აპი</p>
+                    <p class="cta-text" data-lang="scan">დაასკანერე ან დააკლიკე ჩამოსატვირთად</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="chatbot-container">
+        <a href="https://www.facebook.com/profile.php?id=61563291839085" class="chatbot-link">
+            <div class="bot-card">
+                <img src="images/psychobot.png" alt="Explore Chiatura" class="bot-image">
+                <div class="bot-content">
+                    <h3 data-lang="like">შეიძლება ასევე მოგეწონოთ</h3>
+                    <p data-lang="medea">ჩეთბოტი მედეა</p>
+                    <p class="cta-text" data-lang="page">მოიწონე Facebook გვერდი</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="subscription-form-container">
+        <h2 data-lang="subscription">გამოიწერეთ სიახლეები</h2>
+        <p data-lang="write">ჩაწერეთ თქვენი მეილი და მიიღეთ უახლესი ინფორმაციები სისტემატიურად.</p>
+        <form action="javascript:void(0);" method="POST" class="subscription-form" onsubmit="alert('თქვენი გამოწერა შესრულებულია');">
+            <input data-lang="mail" type="email" name="email" placeholder="ჩაწერეთ მეილი" required>
+            <button type="submit" class="subscribe-btn" data-lang="subscribe">გამოწერა</button>
+        </form>
+    </div>
+
+    
+    
+    <footer>
+        <div class="footer-content">
+            <a href="https://www.tbceducation.ge/"><img src="images/tbc.png" alt="TBC Logo" class="footer-logo" height="125"></a>
+            
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com/profile.php?id=61556699115785&locale=ka_GE"><img src="images/imfacebook.png" alt="Facebook" height="125"></a></li>
+                <li><a href="https://www.instagram.com/s63674505?igsh=Zjl0d3AxbDF6aG8y&utm_source=ig_contact_invite"><img src="images/insta.png" alt="Instagram" height="125"></a></li>
+                <li><a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"><img src="images/linked.png" alt="LinkedIn" height="125"></a></li>
+            </ul>
+        </div>
+
+        <p data-lang="copyright">© 2024 ყველა უფლება დაცულია.</p>
+    </footer>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>შესვლა</title>
+    <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../images/SANDRINIO.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
+    <script src="../js/news.js"></script>
+
+    <style>
+        .facebook-btn {
+            margin-top: 20px; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: #3b5998;
+            color: white;
+            padding: 12px;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        .facebook-icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        .btn-primary.btn-lg {
+            margin-bottom: 20px; 
+        }
+    </style>
+</head>
+<body>
+  <header>
+    <nav>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <img src="../images/SANDRINIO.png" alt="Logo" class="logo" height="100"></a></li>
+                <li><a href="../index.html" data-lang="main">მთავარი</a></li>
+                <li><a href="../history.html" data-lang="history">ისტორია</a></li>
+                <li><a href="../culture.html" data-lang="culture">კულტურა</a></li>
+                <li><a href="../tourism.html" data-lang="tourism">ტურიზმი</a></li>
+                <li><a href="../gallery.html" data-lang="gallery">გალერეა</a></li>
+                <li><a href="../TIMETABLES.HTML" data-lang="timetable">განრიგი</a></li>
+                <li><a href="../NEWS.HTML" data-lang="news">სიახლეები</a></li>
+                <li><a href="../aboutproject.html" data-lang="project" class="active">პროექტის შესახებ</a></li>
+                <li><a href="../blogs.html" data-lang="videos">ვიდეოები</a></li>
+                <li><a href="../contact.html" data-lang="contact">კონტაქტი</a></li>
+                <li><a href="../books.html" data-lang="books">წიგნები</a></li>
+                <li><a href="login.html" data-lang="log-in"><b>Log In</b></a></li>
+                <li><a href="register.html" data-lang="register"><b>Register</b></a></li>
+            </ul>
+  
+        </nav>
+        <div class="language-buttons">
+            <button class="btn btn-warning" onclick="changeLanguage('ka')">ქართული</button>
+            <button class="btn btn-success" onclick="changeLanguage('en')">English</button>
+        </div>
+    </nav>
+</header>
+    <section class="vh-100">
+        <div class="container py-5 h-100">
+          <div class="row d-flex align-items-center justify-content-center h-100">
+            <div class="col-md-8 col-lg-7 col-xl-6">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
+                class="img-fluid" alt="Phone image">
+            </div>
+            <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+              <form>
+                
+                <div class="form-outline mb-4">
+                  <input type="email" id="form1Example13" class="form-control form-control-lg" />
+                  <label class="form-label" for="form1Example13">Email address</label>
+                </div>
+      
+                
+                <div class="form-outline mb-4">
+                  <input type="password" id="form1Example23" class="form-control form-control-lg" />
+                  <label class="form-label" for="form1Example23">Password</label>
+                </div>
+      
+                <div class="d-flex justify-content-around align-items-center mb-4">
+                  
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
+                    <label class="form-check-label" for="form1Example3"> Remember me </label>
+                  </div>
+                  <a href="#!">Forgot password?</a>
+                </div>
+                
+              
+                
+                <button type="submit" class="btn btn-primary btn-lg btn-block" onclick="redirectToIndex()">Sign in</button>
+
+                <script>
+                    function redirectToIndex() {
+                        window.location.href = 'FINAL PROJECT/index.html';
+                    }
+                </script>
+
+                <div class="divider d-flex align-items-center my-4">
+                  <p class="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
+                </div>
+      
+                <a class="btn btn-facebook btn-lg btn-block" href="facebook.html" role="button">
+                  <i class="fab fa-facebook-f me-2"></i>Continue with Facebook
+                </a>
+                
+                <a class="btn btn-twitter btn-lg btn-block" href="#!" role="button">
+                  <i class="fab fa-twitter me-2"></i>Continue with Twitter</a>
+      
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+</body>
+</html>

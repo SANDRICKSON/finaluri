@@ -1,0 +1,588 @@
+body{
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+header {
+    background: #2c3e50; 
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav ul {
+    
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+.section {
+    padding: 50px;
+    text-align: center;
+}
+
+.main {
+    background: url('path_to_image/chiatura-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #34495e;
+    color: #fff;
+}
+
+
+.bus-schedule {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bus-schedule th, .bus-schedule td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.bus-schedule th {
+    background-color: #007bff;
+    color: white;
+}
+
+.bus-schedule tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.bus-schedule tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+
+.upload-section {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#imageUpload {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#uploadButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#uploadButton:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.footer-logo {
+    height: 50px; 
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    gap: 15px; 
+    margin: 0;
+    padding: 0;
+}
+
+.social-links li a img {
+    height: 50px; 
+}
+
+.login {
+    background-color: #007bff;
+    width: 60px;
+    height: 60px;
+}
+
+.social-links {
+    align-items: center;
+}
+
+
+.bot {
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    padding: 15px 32px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block;
+    font-size: 16px; 
+    margin: 4px 2px;
+    cursor: pointer; 
+    border-radius: 8px; 
+    transition: background-color 0.3s ease; 
+}
+
+.bot:hover {
+    background-color: #45a049; 
+}
+
+
+.chatbot-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.chatbot-link {
+    text-decoration: none;
+}
+
+.bot-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bot-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.bot-image {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 15px;
+}
+
+.bot-content h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 0;
+}
+
+.bot-content p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 1em;
+}
+
+.cta-text {
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+
+.video-gallery-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.video-frame {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.video-frame iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li a {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .section {
+        padding: 20px;
+    }
+
+    .video-gallery-section {
+        grid-template-columns: 1fr; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    header nav ul li a {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .section h1 {
+        font-size: 24px;
+    }
+
+    .section p {
+        font-size: 16px;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+.weather-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.weather-card {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.weather-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+
+@keyframes moveCableCar {
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.cablecar-animation {
+    position: relative; 
+    animation: moveCableCar 8s infinite alternate linear;
+}
+
+
+
+
+
+
+header .header-books {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+header .header-books img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.subscription-form-container {
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 8px;
+    padding: 30px 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+    margin: 30px auto;
+    border: 1px solid #ddd;
+}
+
+
+.subscription-form-container h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #2575fc; 
+    margin-bottom: 10px;
+}
+
+
+.subscription-form-container p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+
+.subscription-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.subscription-form input[type="email"] {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+
+.subscription-form input[type="email"]:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 8px rgba(37, 117, 252, 0.3);
+}
+
+
+.subscribe-btn {
+    padding: 12px;
+    background-color: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+
+.subscribe-btn:hover {
+    background-color: #6a11cb;
+}
+
+
+
+
+
+
+
+
+
+.brand-mission, .product-quality {
+    margin: 30px auto;
+    text-align: center;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+.brand-mission h2, .product-quality h2 {
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+.product-quality img {
+    margin-top: 15px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.theatre{
+    font-family: "ALK Tall Mtavruli", sans-serif;
+    font-size: 29px;
+}
+
+.cable{
+    font-family: "ALK Tall Mtavruli", sans-serif;
+    font-size: 29px;
+}
+
+.chiaturoba{
+    
+        font-family: "ALK Tall Mtavruli", sans-serif;
+        font-size: 29px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+.add-post-button {
+    background-color: #4CAF50; 
+    color: white; 
+    font-size: 16px; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-post-button:hover {
+    background-color: #45a049; 
+    transform: scale(1.05); 
+}
+
+.add-post-button:active {
+    transform: scale(0.95); 
+}
+
+
+.form-container {
+    display: none; 
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-container input, .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-container button {
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #45a049;
+}
+
+.preview {
+    margin-top: 20px;
+}
+
+
+
+
+
+
+.cablecar-animation1 {
+    position: relative; 
+    animation: moveCableCarReverse 8s infinite alternate linear;
+}
+
+@keyframes moveCableCarReverse {
+    from {
+        left: 100%; 
+    }
+    to {
+        left: 0; 
+    }
+}
