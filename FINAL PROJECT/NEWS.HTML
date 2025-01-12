@@ -4,82 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-lang="news-title">სიახლეები - ჭიათურა</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="images/SANDRINIO.png" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/alk-tall-mtavruli.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
     <script src="js/news.js" defer></script>
 </head>
 <body>
 
-    <header>
+     <header>
         <nav class="navbar">
             <ul class="nav-menu">
-                <img src="images/SANDRINIO.png" alt="Logo" class="logo" height="100"></a></li>
-                <li><a href="index.html" data-lang="main">მთავარი</a></li>
-                <li><a href="history.html" data-lang="history">ისტორია</a></li>
-                <li><a href="culture.html" data-lang="culture">კულტურა</a></li>
-                <li><a href="tourism.html" data-lang="tourism">ტურიზმი</a></li>
-                <li><a href="gallery.html" data-lang="gallery">გალერეა</a></li>
-                <li><a href="TIMETABLES.HTML" data-lang="timetable">განრიგი</a></li>
-                <li><a href="NEWS.HTML" data-lang="news">სიახლეები</a></li>
-                <li><a href="aboutproject.html" data-lang="project" class="active">პროექტის შესახებ</a></li>
-                <li><a href="blogs.html" data-lang="videos">ვიდეოები</a></li>
-                <li><a href="contact.html" data-lang="contact">კონტაქტი</a></li>
-                <li><a href="books.html" data-lang="books">წიგნები</a></li>
-                <li><a href="AUTH/login.html" data-lang="log-in"><b>Log In</b></a></li>
-                <li><a href="AUTH/register.html" data-lang="register"><b>Register</b></a></li>
+                <img src="images/SANDRINIO.png" alt="Logo" class="logo" height="100">
+                <li><a href="index.html" data-lang="main"><i class="fas fa-home"></i> <span class="menu-text">მთავარი</span></a></li>
+                <li><a href="history.html" data-lang="history"><i class="fas fa-book"></i> <span class="menu-text">ისტორია</span></a></li>
+                <li><a href="culture.html" data-lang="culture"><i class="fas fa-theater-masks"></i> <span class="menu-text">კულტურა</span></a></li>
+                <li><a href="tourism.html" data-lang="tourism"><i class="fas fa-globe"></i> <span class="menu-text">ტურიზმი</span></a></li>
+                <li><a href="gallery.html" data-lang="gallery"><i class="fas fa-images"></i> <span class="menu-text">გალერეა</span></a></li>
+                <li><a href="TIMETABLES.HTML" data-lang="timetable"><i class="fas fa-calendar-alt"></i> <span class="menu-text">განრიგი</span></a></li>
+                <li><a href="NEWS.HTML" data-lang="news"><i class="fas fa-newspaper"></i> <span class="menu-text">სიახლეები</span></a></li>
+                <li><a href="aboutproject.html" data-lang="project" class="active"><i class="fas fa-info-circle"></i> <span class="menu-text">პროექტის შესახებ</span></a></li>
+                <li><a href="blogs.html" data-lang="videos"><i class="fas fa-video"></i> <span class="menu-text">ვიდეოები</span></a></li>
+                <li><a href="books.html" data-lang="books"><i class="fas fa-book-open"></i> <span class="menu-text">წიგნები</span></a></li>
+                <li><a href="contact.html" data-lang="contact"><i class="fas fa-phone-alt"></i> <span class="menu-text">კონტაქტი</span></a></li>
+                <li><a href="AUTH/login.html" data-lang="log-in"><i class="fas fa-sign-in-alt"></i> <span class="menu-text"><b>Log In</b></span></a></li>
+                <li><a href="AUTH/register.html" data-lang="register"><i class="fas fa-user-plus"></i><span class="menu-text"><b>Register</span></b></a></li>
             </ul>
             <div class="language-buttons">
-                <button class="btn btn-warning" onclick="changeLanguage('ka')">ქართული</button>
-                <button class="btn btn-success" onclick="changeLanguage('en')">English</button>
+                <button class="Georgian" onclick="changeLanguage('ka')">ქართული</button>
+                <button class="English" onclick="changeLanguage('en')">English</button>
             </div>
         </nav>
     </header>
 
-
-
-
-    
-
-
-
-
-
-
-   
-    
-
-
     <section class="section">
-        <button onclick="toggleForm()" class="styled-button" data-lang="addnews">სიახლის დამატება</button>
+        <button onclick="toggleForm()" class="styled-button" data-lang="addnews"><i class="fas fa-pencil-alt"></i> სიახლის დამატება</button>
         <h2 data-lang="news-header">სიახლეები</h2>
         <div class="news-form" id="newsForm">
-            <h3 data-lang="addhere">ახალი ამბის დამატება</h3>
+            <h3 data-lang="addhere">
+                <i class="fas fa-plus-circle"></i> 
+                ახალი ამბის დამატება
+            </h3>
             <form id="addNewsForm">
-                <label for="title" data-lang="addtitle">სათაური:</label><br>
+                <label for="title" data-lang="addtitle">
+                    <i class="fas fa-heading"></i> 
+                    სათაური:
+                </label><br>
                 <input type="text" id="title" name="title" required placeholder="ჩაწერეთ სათაური -  სავალდებულო" data-lang="requiredtitle"><br><br>
-
         
-                <label for="date" data-lang="date">თარიღი:</label><br>
+                <label for="date" data-lang="date">
+                    <i class="fas fa-calendar-alt"></i> 
+                    თარიღი:
+                </label><br>
                 <input type="date" id="date" name="date" required><br><br>
         
-                <label for="story" data-lang="story">ამბავი:</label><br>
+                <label for="story" data-lang="story">
+                    <i class="fas fa-file-alt"></i> 
+                    ამბავი:
+                </label><br>
                 <textarea id="story" name="story" required placeholder="ჩაწერეთ სიახლე - სავალდებულო"></textarea><br><br>
         
-                <label for="image" data-lang="photo">ფოტომასალა (ნებაყოფლობითი):</label><br>
-                <input type="file" id="image" name="image" height="250px" width="250px"><br><br>
-                
+                <label for="image" data-lang="photo">
+                    <i class="fas fa-image"></i> 
+                    ფოტომასალა (ნებაყოფლობითი):
+                </label><br>
+                <input type="file" id="image" name="image"><br><br>
         
                 <input type="submit" value="დამატება" class="submit-button" data-lang="addition">
             </form>
         </div>
         
+
         <div class="news-display" id="newsDisplay"></div>
         <p style="display: inline-block; padding: 10px; background-color: green; border-radius: 5px; font-size: 18px; font-weight: bold; color: white;">
             11.12.24
           </p>
-
-
 
 <style>
     .date-style{
@@ -88,7 +88,6 @@
         color: white;
         margin-bottom: 20px;
     }
-    
 
     .styled-button {
         background-color: #4CAF50;
@@ -113,7 +112,6 @@
         outline: none;
     }
 
-    
     .news-form {
         display: none;
         margin-top: 30px;
@@ -172,12 +170,10 @@
         background-color: #45a049;
     }
 
-    
     .date-style {
         display: inline-block; padding: 10px; background-color: green; border-radius: 5px; font-size: 18px; font-weight: bold; color: white;
     }
 
-   
     .news-display {
         margin-top: 30px;
     }
@@ -185,7 +181,7 @@
     .news-display h3 {
         font-size: 24px;
         color: #333;
-       
+
     }
 
     .news-display p {
@@ -196,77 +192,121 @@
     }
 
     .image{
-        width: 500px;
-        height: 500px;
+        width: 100px;
+        height: 200px;
     }
 
 </style>
 
 <script>
-    let editMode = false; 
+    let editMode = false;
+let editIndex = null;
 
-    function toggleForm(newsItem = null) {
-        const form = document.getElementById('newsForm');
-        form.style.display = form.style.display === 'none' ? 'block' : 'none';
+document.addEventListener('DOMContentLoaded', function() {
+    const savedNews = JSON.parse(localStorage.getItem('newsItems')) || [];
+    savedNews.forEach(displayNews);
+});
 
-        if (newsItem) {
-            
-            editMode = true;
-            document.getElementById('title').value = newsItem.title;
-            document.getElementById('date').value = newsItem.date;
-            document.getElementById('story').value = newsItem.story;
-            
-        } else {
-            editMode = false;
-        }
-    }
-    
-    document.getElementById('addNewsForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-    
-        const title = document.getElementById('title').value;
-        const date = document.getElementById('date').value;
-        const image = document.getElementById('image').files[0];
-        const story = document.getElementById('story').value;
-        
-    
-        let newsHTML = `<section class="section">`;
-        newsHTML += `<p style="display: inline-block; padding: 10px; background-color: green; border-radius: 5px; font-size: 18px; font-weight: bold; color: white;">${date}</p>`;
-        newsHTML += `<p><b>${title}</b></p>`;
-        newsHTML += `<p>${story}</p>`;
-    
-        if (image) {
-            const reader = new FileReader();
-            reader.onload = function() {
-                newsHTML += `<img src="${reader.result}" alt="News Image" style="width: 100px; height: 100px;">`;
-                newsHTML += `</section>`;
-                document.getElementById('newsDisplay').innerHTML = newsHTML;
-            };
-            reader.readAsDataURL(image);
-        } else {
-            newsHTML += `</section>`;
-            document.getElementById('newsDisplay').innerHTML = newsHTML;
-        }
+function toggleForm(newsItem = null, index = null) {
+    const form = document.getElementById('newsForm');
+    form.style.display = form.style.display === 'none' ? 'block' : 'none';
 
-        
+    if (newsItem) {
+        editMode = true;
+        editIndex = index;
+        document.getElementById('title').value = newsItem.title;
+        document.getElementById('date').value = newsItem.date;
+        document.getElementById('story').value = newsItem.story;
+    } else {
+        editMode = false;
+        editIndex = null;
         document.getElementById('addNewsForm').reset();
-        toggleForm();  
+    }
+}
 
-        
-        if (editMode) {
-            
-            editMode = false;  
-        }
-    });
+document.getElementById('addNewsForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const title = document.getElementById('title').value;
+    const date = document.getElementById('date').value;
+    const story = document.getElementById('story').value;
+    const image = document.getElementById('image').files[0];
+
+    const today = new Date().toISOString().split('T')[0]; 
+    if (date > today) {
+        alert("The date cannot be in the future.");
+        return;
+    }
+
+    const newsItem = { title, date, story, image: null };
+
+    if (image) {
+        const reader = new FileReader();
+        reader.onload = function() {
+            newsItem.image = reader.result;
+            saveAndDisplayNews(newsItem);
+        };
+        reader.readAsDataURL(image);
+    } else {
+        saveAndDisplayNews(newsItem);
+    }
+
+    document.getElementById('addNewsForm').reset();
+    toggleForm();
+});
+
+function saveAndDisplayNews(newsItem) {
+    let newsItems = JSON.parse(localStorage.getItem('newsItems')) || [];
+
+    if (editMode) {
+        newsItems[editIndex] = newsItem;
+        editMode = false;
+        editIndex = null;
+    } else {
+        newsItems.push(newsItem);
+    }
+
+    localStorage.setItem('newsItems', JSON.stringify(newsItems));
+    renderNews();
+}
+
+function renderNews() {
+    const newsDisplay = document.getElementById('newsDisplay');
+    newsDisplay.innerHTML = '';
+    const newsItems = JSON.parse(localStorage.getItem('newsItems')) || [];
+    newsItems.forEach((newsItem, index) => displayNews(newsItem, index));
+}
+
+function displayNews(newsItem, index) {
+    const newsHTML = `
+        <section class="section">
+            <p style="display: inline-block; padding: 10px; background-color: green; border-radius: 5px;  font-weight: bold; color: white;">${newsItem.date}</p>
+            <p><b>${newsItem.title}</b></p>
+            <p>${newsItem.story}</p>
+            ${newsItem.image ? `<img src="${newsItem.image}" alt="News Image" style="width: 299px; height:168px ">` : ''}
+            <button onclick="editNews(${index})">✏️</button>
+            <button onclick="deleteNews(${index})">🗑️</button>
+        </section>`;
+    document.getElementById('newsDisplay').innerHTML += newsHTML;
+}
+
+function editNews(index) {
+    const newsItems = JSON.parse(localStorage.getItem('newsItems')) || [];
+    toggleForm(newsItems[index], index);
+}
+
+function deleteNews(index) {
+    let newsItems = JSON.parse(localStorage.getItem('newsItems')) || [];
+    newsItems.splice(index, 1);
+    localStorage.setItem('newsItems', JSON.stringify(newsItems));
+    renderNews();
+}
+
 </script>
-
-
-
-
 
           <p data-lang="theatre">
             <b>ჭიათურის თეატრი 130 წლის გახდა</b>
-            
+
         </p>
         <img src="images/theatre.jpg">
         <p class="theatre" data-lang="theatrenews">დღეს ჭიათურის თეატრს 130 წელი შეუსრულდა.
@@ -280,16 +320,14 @@
             საიუბილეო თარიღთან დაკავშირებით, მივიღეთ გადაწყვეტილება, - 2025 წელი  ჭიათურაში თეატრის წლად  გამოცხადდეს  და  შესაბამისად აღინიშნოს სხვადასხვა ღონისძიებებით.</p>
     </section>
     <section class="section">
-        
+
         <p style="display: inline-block; padding: 10px; background-color: green; border-radius: 5px; font-size: 18px; font-weight: bold; color: white;">
             22.11.24
           </p>
 
-    
-
         <p data-lang="news-text">
             <b>ჭიათურის საბაგირო "საშევარდნო-ზედა რგანი" გაიხსნა.</b>
-            
+
         </p>
         <img src="images/sashevardno.png">
         <p class="cable" data-lang="cable">🚠  ჭიათურაში,ზედა რგანის (ე.წ  „მშვიდობის“ ) მიმართულებით სამგზავრო საბაგიროს რეაბილიტაციის პროცესი დასრულდა.
@@ -305,13 +343,42 @@
         <p style="display: inline-block; padding: 10px; background-color: green; border-radius: 5px; font-size: 18px; font-weight: bold; color: white;">
             12.10.24
           </p>
-          
+
         <p data-lang="chiaturoba2024">
             <b>ჭიათურაში სახალხო დღესასწაული “ჭიათურობა 2024” აღინიშნა.</b>
         </p>
-        <img src="https://frontnews.ge/wp-content/uploads/2024/10/chiatura4-1-300x200.jpg">
-        <img src="https://frontnews.ge/wp-content/uploads/2024/10/chiatura-1-300x200.jpg">
-        <img src="images/MEDAMERI.jpg" width="300">
+        <div style="display: flex; justify-content: center; align-items: center; gap: 20px; padding: 20px;">
+            <img src="https://frontnews.ge/wp-content/uploads/2024/10/chiatura4-1-300x200.jpg" alt="სურათი 1" class="zoomable-image">
+            <img src="https://frontnews.ge/wp-content/uploads/2024/10/chiatura-1-300x200.jpg" alt="სურათი 2" class="zoomable-image">
+            <img src="images/MEDAMERI.jpg" alt="სურათი 3" class="zoomable-image">
+        </div>
+        
+        <!-- Overlay for enlarged image -->
+        <div id="imageOverlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); justify-content: center; align-items: center;">
+            <img id="enlargedImage" style="max-width: 90%; max-height: 90%; border-radius: 10px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);">
+        </div>
+        
+        <script>
+            // JavaScript for enlarging images
+            document.querySelectorAll('.zoomable-image').forEach(img => {
+                img.style.cursor = 'pointer'; // Change cursor to pointer
+                img.style.borderRadius = '10px';
+                img.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
+                img.addEventListener('click', () => {
+                    const overlay = document.getElementById('imageOverlay');
+                    const enlargedImg = document.getElementById('enlargedImage');
+                    enlargedImg.src = img.src;
+                    overlay.style.display = 'flex'; // Show overlay
+                });
+            });
+        
+            // Hide the overlay when clicked
+            document.getElementById('imageOverlay').addEventListener('click', () => {
+                document.getElementById('imageOverlay').style.display = 'none';
+            });
+        </script>
+        
+        
         <p data-lang="chiaturoba" class="chiaturoba">
             ქალაქში მთელი დღის  განმავლობაში სხვადასხვა კულტურული, სპორტული და გასართობი ღონისძიებები მიმდინარეობდა. ასევე გაიმართა თეატრალიზებული წარმოდგენები, ფლეშმობები, ფერების ფესტივალი, საპნის ბუშტების, ქიმიური, აზოტის, დრამერების და ორკესტრების შოუები.
             ღონისძიებებს ჭიათურისა და საჩხერის მიტროპოლიტი მეუფე დანიელი, იმერეთში სახელმწიფო რწმუნებული ლევან ზალკალიანი,  ჭიათურის მუნიციპალიტეტის მერი გივი მოდებაძე,თავდაცვისა და უშიშროების კომიტეტის თავმჯდომარე ალექსანდრე ტაბატაძე, საჩხერის, ჭიათურისა და ხარაგაულის მაჟორიტარი დეპუტატი პაატა კვიჟინაძე, საკრებულოს თავმჯდომარე ალექსანდრე ციცქიშვილი, ადგილობრივი ხელისუფლების წარმომადგენლები და მოწვეული სტუმრები ესწრებოდნენ.
@@ -329,7 +396,7 @@
         <p style="display: inline-block; padding: 10px; background-color: green; border-radius: 5px; font-size: 18px; font-weight: bold; color: white;">
             12.10.24
           </p>
-          
+
         <p data-lang="chiaturoba2024">
             <b>რობოტების გამოფენა 2024.</b>
         </p>
@@ -344,46 +411,43 @@
                 </iframe>
             </div>
         </section>
-        
-        
 
     <footer>
         <div class="footer-content">
-            <a href="https://www.tbceducation.ge/">
-                <img src="images/tbc.png" alt="TBC Logo" class="footer-logo" height="125">
-            </a>
-            
+            <a href="https://www.tbceducation.ge/"><img src="images/tbc.png" alt="TBC Logo" class="footer-logo" height="125"></a>
+
             <ul class="social-links">
-                <li><a href="https://www.facebook.com/profile.php?id=61556699115785&locale=ka_GE"><img src="images/imfacebook.png" alt="Facebook"></a></li>
-                <li><a href="https://www.instagram.com/yourprofile/"><img src="images/instagram.jpg" alt="Instagram" height="125"></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=61556699115785&locale=ka_GE"><img src="images/imfacebook.png" alt="Facebook" height="125"></a></li>
+                <li><a href="https://www.instagram.com/s63674505?igsh=Zjl0d3AxbDF6aG8y&utm_source=ig_contact_invite"><img src="images/insta.png" alt="Instagram" height="125"></a></li>
                 <li><a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"><img src="images/linked.png" alt="LinkedIn" height="125"></a></li>
+                <li><a href="privacy.html"><img src="images/privacy.png"></a></li>
             </ul>
+
         </div>
-        <p>© 2024 ყველა უფლება დაცულია.</p>
+        <p data-lang="copyright">© 2024 ყველა უფლება დაცულია.</p>
     </footer>
-  
+
     <style>
         #video-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
-    gap: 20px; /* Space between videos */
+    gap: 20px; 
     padding: 20px;
 }
 
 .video-frame {
     background-color: #f1f1f1; 
-    border-radius: 10px;
+    border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     overflow: hidden; 
 }
 
 .video-frame iframe {
     width: 100%;
-    height: 200px;
+    height: 200px; 
     object-fit: cover; 
     border-radius: 10px;
 }
-
 
 @media (max-width: 768px) {
     #video-gallery {
@@ -395,8 +459,10 @@
     }
 }
 
+.cable{
+    font-size: 35x;
+}
     </style>
-    
-    
+
 </body>
 </html>
